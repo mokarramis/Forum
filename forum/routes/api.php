@@ -28,3 +28,5 @@ Route::post('remove', 'Api\TreadController@destroy');
 
 Route::get('show', 'Api\ChannelController@show');
 Route::get('channel/{channel}', 'Api\ChannelController@thread');
+
+Route::get('{reply}/add-favorite', 'Api\FavoriteController@store');
